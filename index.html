@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Favorite Places</title>
+        <!--To ensure proper rendering and touch zooming, add the viewport meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+
+<!-- Optional theme -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+    <body>
+        <header class="navbar">
+            <div class="container">
+                <nav class="navbar navbar-default border">
+                  <div class="container-fluid">
+                    <!-- Div below provides the hamburger button on small screens -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="films.html">Films</a></li>
+                      </ul>
+                      <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                      </form>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <div class="jumbotron border">
+                <!--<img src="images\banner.jpg" class="img-responsive">-->
+                <h1>My Favorite Places</h1>
+            </div>
+        </div>
+        <div class="container">
+            <!--<div class="row">
+              <div class="col-lg-2 cst border">Coast</div>
+              <div class="col-lg-2 mtn border">Mountains</div>
+              <div class="col-lg-2 dst border">Desert</div>
+            </div>
+            <div class="row col-mar">
+              <div class="col-lg-2 cst border">Coast</div>
+              <div class="col-lg-2 mtn border">Mountains</div>
+              <div class="col-lg-2 dst border">Desert</div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-2 cst border">Coast</div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-2 mtn border">Mountains</div>
+              <div class="col-lg-1"></div>
+              <div class="col-lg-2 dst border">Desert</div>
+              <div class="col-lg-2"></div>
+            </div>-->
+            <div class="row" id="lists">
+              <div class="col-sm-4 cst border">
+                <h3>Coast</h3>
+                <ul id="coast">
+                    <li>
+                        Oregon Dunes National Recreation Area
+                        <p class="smalltext">
+                            Florence, OR
+                        </p>
+                    </li>
+                    <li>
+                        <a href="http://www.oregonhikers.org/field_guide/Neahkahnie_Mountain_Loop_Hike" target="_blank">Neahkahnie Mountain</a>
+                        <p class="smalltext">
+                            Northern Oregon Coast
+                        </p>
+                    </li>
+                    <li>
+                        <a href="http://www.sealioncaves.com/" target="_blank">Sea Lion Caves</a>
+                        <p class="smalltext">
+                            Florence, OR
+                        </p>
+                    </li>
+                    <li>
+                        <a href="http://oregonstateparks.org/index.cfm?do=parkPage.dsp_parkPage&parkId=86" target="_blank">Heceta Head Lighthouse</a>
+                        <p class="smalltext">
+                            Florence, OR
+                        </p>
+                    </li>
+                    <li>
+                        <a href="http://www.marinersquare.com/oregon-undersea-gardens/oregon-undersea-gardens.htm" target="_blank">Undersea Gardens</a>
+                        <p class="smalltext">
+                            Newport, OR
+                        </p>
+                    </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 mtn border">
+                <h3>Mountains</h3>
+                  <ul id="mountains">
+                    <li>
+                        <a href="shastaguides.com/" target="_blank">Mt Shasta</a>
+                        <p class="smalltext">
+                            Northern California
+                        </p>
+                    </li>
+                    <li>
+                        Mt McLoughlin
+                        <p class="smalltext">
+                            Southern Oregon
+                        </p>
+                    </li>
+                    <li>
+                        The Three Sisters Wilderness
+                        <p class="smalltext">
+                            Bend, OR
+                        </p>
+                    </li>
+                    <li>
+                        <a href="timberlinemtguides.com/" target="_blank">Mt Hood</a>
+                        <p class="smalltext">
+                            Government Camp, OR
+                        </p>
+                    </li>
+                    <li>
+                        Hood River Valley
+                        <p class="smalltext">
+                            Northern Oregon
+                        </p>
+                    </li>
+                </ul>
+              </div>
+              <div class="col-sm-4 dst border">
+                <h3>Desert</h3>
+                  <ul id="desert">
+                    <li>
+                        Joshua Tree National Park
+                        <p class="smalltext">
+                            Southern California
+                        </p>
+                    </li>
+                    <li>
+                        <a href="http://smithrock.com/" target="_blank">Smith Rock State Park</a>
+                        <p class="smalltext">
+                            Central Oregon
+                        </p>
+                    </li>
+                    <li>
+                      <a href="" target="_blank">
+                      Monument Valley</a>
+                      <p class="smalltext">
+                          Arizona
+                      </p>
+                    </li>
+                </ul>
+              </div>
+
+            
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="js/jquery-3.0.0.js"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+  ...
+</html>

@@ -1,0 +1,89 @@
+body {
+    /*background-color: #16441D;*/
+    background-color: rgb(83, 83, 83);
+    color: white;
+}
+
+h1 {
+    padding-top: 3%;
+    margin-left: -2%;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+.cst {
+    /*background-color: #098388;*/
+    background-color: rgb(91, 98, 64);
+}
+
+.mtn {
+    /*background-color: #A52A2A;*/
+    background-color: rgb(120, 139, 117);
+}
+
+.dst {
+   /*background-color: #E6BD00;*/
+   background-color: rgb(149, 168, 140);
+}
+
+.border {
+    border: 2px solid #989998;
+    border-radius: 2px;
+}
+
+.jumbotron {
+    background: url(images/banner.jpg);
+    background-size: 100%;
+    width: 81%;
+    height: 295px;
+    margin-bottom: 2%;
+    margin-left: 8%
+}
+
+/*not in use*/
+.col-mar div:not(:first-child) {
+    margin-left: 3%;
+}
+
+/*media breakpoints calculated in lab notes*/
+@media screen and (min-width: 452px) and (max-width: 768px) {
+    .jumbotron {
+        background: url(images/banner.jpg);
+        background-size: 100%;
+        width: 81%;
+        height: 167px;
+        margin-bottom: 2%;
+        margin-left: 8%
+    }
+    #lists {max-width: 80%;
+        padding-left: 20%;
+    }
+}
+
+@media screen and (max-width: 451px){
+    .jumbotron {
+        background: url(images/banner.jpg);
+        background-size: 100%;
+        width: 81%;
+        height: 96px;
+        margin-bottom: 2%;
+        margin-left: 8%
+    }
+    #lists {max-width: 80%;
+        padding-left: 20%;
+    }
+
+    h1 {
+        font-size: 18px;        
+    }
+}
+/*
+@media screen and (max-width: 768px) {
+    #lists {max-width: 80%;
+        padding-left: 20%;
+    }
+}*/
+
