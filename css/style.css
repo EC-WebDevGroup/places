@@ -16,17 +16,17 @@ a {
 
 .cst {
     /*background-color: #098388;*/
-    background-color: rgb(91, 98, 64);
+    background-color: rgb(69, 116, 184);
 }
 
 .mtn {
     /*background-color: #A52A2A;*/
-    background-color: rgb(120, 139, 117);
+    background-color: rgb(72, 78, 66);
 }
 
 .dst {
    /*background-color: #E6BD00;*/
-   background-color: rgb(149, 168, 140);
+   background-color: rgb(141, 136, 130);
 }
 
 .border {
@@ -35,7 +35,7 @@ a {
 }
 
 .jumbotron {
-    background: url(images/banner.jpg);
+    background: url(images/banner.jpg) no-repeat;
     background-size: 100%;
     width: 81%;
     height: 295px;
@@ -87,3 +87,15 @@ a {
     }
 }*/
 
+
+#map {
+    width: 700px;
+    height: 400px;    
+}
+
+@media screen and (max-width: 734px;) {
+    #map {
+        width: 400px;
+        height: 230px;
+    }
+}
